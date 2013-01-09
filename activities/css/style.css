@@ -1,0 +1,32 @@
+body{
+	background-image: url('../images/linen.png');
+	}
+
+#wrapper{
+	margin: 0 auto;
+	width: 760px;
+	background: #fff;
+	border: 2px solid #aaa;
+	border-radius: 25px;
+	padding: 5px;
+	font-family: 'Exo', sans-serif;
+	}
+
+h1, h2, header{
+	font-family: helvetica, sans-serif;
+}
+
+
+h1, header{
+	font-size: 20px;
+	color: #663399;
+}
+
+
+h2{
+	font-size: 16px;
+}
+
+span{
+	font-weight: bold;
+}
