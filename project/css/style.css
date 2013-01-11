@@ -16,6 +16,7 @@ table {
 body{
 	width: 960px;
 	margin: 0 auto;
+	background-color: gray;
 }
 
 aside{
