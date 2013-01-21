@@ -10,17 +10,9 @@
 		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 	<!-- End Bootstrap -->
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet" media="screen">
-		
-		<style type="text/css">
-      		body {
-        	padding-top: 60px;
-        	padding-bottom: 40px;
-      		}
-      		.sidebar-nav {
-        	padding: 9px 0;
-      		}
-   			</style>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="description" content="">
@@ -28,47 +20,59 @@
 	</head>
 
 	<body>
+		<!-- Begin page content -->
+		<div class="container">
 		
-		<header><a href="index.html">St. Francis Hospital for Animals</a></header>
-		
-		<nav>
-			<ul>
+		<div class="masthead">
+			<img src="img/logo.png" alt="logo" height="150px" width="294px">
+			<nav>
+				<ul class="nav nav-pills ">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
+				<li><a href="about.html" class="active">About Us</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="payment.html">Payments</a></li>
 				<li><a href="review.html">Reviews</a></li>
-				<li><a href="link.html">Links</a></li>
-			</ul>
-		</nav>
+				<li><a href="#">Links</a></li>
+				</ul>
+			</nav>
+		</div>
 
-		<section>
+		<div class="row-fluid">
+		<section class="span9">
 			<h1>Request an Appointment</h1>
 
-			<form method="post" action="#">
-				<div>
+			<form class=".form-horizontal" method="post" action="#">
 					<fieldset>
-    				<legend>Personal Information</legend>
-					<label for="name">Name:</label>
-					<input id="name" name="name" autofocus>
-				</div>
+					<div class="control-group">
+	    				<legend>Personal Information</legend>
+						<label class="control-label" for="name">Name:</label>
+						<input id="name" name="name" type="text" placeholder="John Doe" autofocus>
+					</div>
 				
-				<div>
-					<label for="email">Email:</label>
+				<div class="control-group">
+					<label class="control-label" for="email">Email:</label>
 					<input id="email" name="email" type="email" placeholder="example@example.com" >
 				</div>
 
-				<div>
-					<label>Phone:</label>
+				<div class="control-group">
+					<label class="control-label">Phone:</label>
+					<div class="controls">
 					<input name="Phone" type="text" class="element" id="Phone" />
 				</div>
+				</div>
 				
-				<div>
-					<label>Address:</label>
-					<input name="street" type="text" class="element" id="street" placeholder="1090 Infinite Loop" />
-					<input name="city" type="text" class="element" id="city" placeholder="Charlotte" /> 
-					<input name="zip" type="text" class="element" id="zip" placeholder="05001" />
-					<select name="state">
+				<div class="control-group">
+					<label class="control-label">Address:</label>
+					<div class="controls">
+					<input class="input-xlarge" name="street" type="text" class="element" id="street" placeholder="1090 Infinite Loop" /><br>
+					</div>
+
+					<div class="controls">
+					<input name="city" type="text" class="element" id="city" placeholder="Charlotte" /><br>
+					</div>
+
+					<div class="controls">
+					<select class="input-medium" name="state">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -120,30 +124,46 @@
 						<option value="WV">West Virginia</option>
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
-					</select>
-				</fieldset>
+					</select><br>
+
+					<input class="input-mini" name="zip" type="text" class="element" id="zip" placeholder="05001" />
+
 				</div>
+				</div>
+				</fieldset>
 
 				<div>
 				<fieldset>
 					<legend>Appointment Details</legend>
-					
-					<label for="message">Message:</label>
+
+					<div class="control-group">
+					<label class="control-label" for="regarding">Regarding:</label>
+					<div class="controls">
+					<select id="regarding" name="regarding">
+						<option>Checkup</option> 
+						<option>Emergency</option>
+						<option>Laser Treatment</option> 
+						<option>Pedicure</option>
+						<option>Flea Medicine</option> 
+					</select>
+					</div>
+					</div>
+
+					<div class="control-group">
+					<label class="control-label" for="message">Message:</label>
+					<div class="controls">
 					<textarea id="message" name="message" rows="6" cols="33" >
 					</textarea>
+					</div>
+					</div>
 
-					<label for="regarding">Regarding:</label>
-					<select id="regarding" name="regarding">
-						<option>Laser Treatment</option> 
-						<option>Checkup</option> 
-						<option></option>
-						<option>Legal</option> 
-						<option>Press</option>
-					</select>
-
-					<label for="email_phone">Email or phone confirmation:</label>
-					<input type="radio" name="email_phone" value="email">Email
-					<input type="radio" name="email_phone" value="phone">Phone
+					<!--<div class="control-group"> -->
+					<label class="radio" for="email_phone">Email or phone confirmation:
+					<!-- <div class="controls"> -->
+					<input type="radio" id="optionsRadios1" name="optionsRadios" value="option1" checked>Email
+					<input type="radio" id="optionsRadios2" name="optionsRadios" value="option2">Phone
+					</label>
+					
 				</fieldset>
 				</div>
 
@@ -154,31 +174,34 @@
 			</form>
 		</section> 
 				
-
 		</section>
 
-		<aside>
+		<aside class="span3">
 			<ul>
-				<li>Hours:</li>
+				<li><strong>Hours:</strong></li>
 				<li>M-F 7:30 AM - 6:00 PM</li>
 				<li>Sat. 5:00 PM - 6:00 PM</li>
 				<li>Sun. Pet Pickup Only</li>
 
 			<ul>
-				<li>Location</li>
+				<li><strong>Location</strong></li>
 				<li>3928 Park Road</li>
 				<li>Charlotte, NC 28209</li>
 			</ul>
 		</aside>
 
-		<footer>
-			<p>Copyright &copy; 2012 All rights reserved <strong>St. Francis Hospital for Animals</strong> | Charlotte, NC USA | <a href="contact.html">Contact Us</a></p>
-
-			<p>Proudly Serving Southpark, Dilworth, Myers Park and Cotswold since 1996</p>
-		</footer>
+		<div id="footer" class="span12">
+			<div class="container">
+				<p class="muted credit">Copyright &copy; 2012 All rights reserved <strong>St. Francis Hospital for Animals</strong> | Charlotte, NC USA | <a href="contact.html">Contact Us</a></p>
+				
+				<p class="muted credit">Proudly Serving Southpark, Dilworth, Myers Park and Cotswold since 1996</p>
+			</div>
+		</div> <!--close footer -->
+	</div>
 
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
     	<script src="js/bootstrap.min.js"></script>
     	<script src="js/bootstrap.js"></script>
+    </div>
 	</body>
 </html>

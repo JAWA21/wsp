@@ -1,12 +1,15 @@
+/*  body green 	= #D1DBBD
+	serv green 	= #BFC7AC
+	red 	 	= #993C3C
+	light blue 	= #3E606F
+	darker blue = #193441
+	white 		= #F7F7F7
+	black 		= #111111
+	gray 		= #807D79
+*/
+
 html {
 	background: #7a7265;
-}
-
-body {
-	width: 960px;
-	margin: 0 auto;
-	padding: 0;
-	background-color:  #f0f0f0;
 }
 
 ul, h1, h2, h3, h4, h5, h6 {
@@ -14,10 +17,42 @@ ul, h1, h2, h3, h4, h5, h6 {
 		list-style: none;
 }
 
-aside {
+body {
+	width: 1020px;
+	height: 1187px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container{
+	/*background: url(../img/desktopcomp.jpg); */
+	background-color: #D1DBBD;
+
+}
+
+.masthead {
+	background: url(../img/header_backg.gif);
+	background-repeat: repeat;
+}
+
+nav{
 	float: right;
 }
 
 nav ul{
 	display: inline;
 }
+
+.jumbotron {
+
+}
+
+aside {
+	float: right;
+}
+
+
+
+
+

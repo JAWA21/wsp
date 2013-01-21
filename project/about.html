@@ -9,22 +9,30 @@
 		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 	<!-- End Bootstrap -->
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
-		<header>St. Francis Hospital for Animals</header>
-		<nav>
-			<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html" class="current">About Us</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="payment.html">Payments</a></li>
-			<li><a href="review.html">Reviews</a></li>
-			<li><a href="link.html">Links</a></li>
-		</ul>
-		</nav>
+		<!-- Begin page content -->
+		<div class="container">
+		
+		<div class="masthead">
+			<img src="img/logo.png" alt="logo" height="150px" width="294px">
+			<nav>
+				<ul class="nav nav-pills ">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="active">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="payment.html">Payments</a></li>
+				<li><a href="review.html">Reviews</a></li>
+				<li><a href="#">Links</a></li>
+				</ul>
+			</nav>
+		</div>
 
-		<article>
+		<div class="row-fluid">
+		<article class="span9">
 			<h1>About Us</h1> 
 				<p>St. Francis Hospital for Animals was founded in 1996 with the idea that bigger is NOT always better. While a large practice with many rotating doctors may have some advantages, sometimes clients and patients become just a number. We prefer a smaller, more personal practice atmosphere where we take the time to get to know you and your pet and their individual personalities and health needs. You will experience the continuity of having a doctor take care of your animal who already knows them. There is no need to guess who is on duty any given day.</p>
 				
@@ -33,7 +41,21 @@
 				<p>St. Francis Hospital for Animals: "Modern medicine with old fashioned care." Animal Hospital Charlotte</p>			
 		</article>
 
-		<section>
+		<aside class="span3">
+			<ul>
+				<li><strong>Hours:</strong></li>
+				<li>M-F 7:30 AM - 6:00 PM</li>
+				<li>Sat. 5:00 PM - 6:00 PM</li>
+				<li>Sun. Pet Pickup Only</li>
+
+			<ul>
+				<li><strong>Location</strong></li>
+				<li>3928 Park Road</li>
+				<li>Charlotte, NC 28209</li>
+			</ul>
+		</aside>
+
+		<section class="span9">
 			<h1>Our Staff</h1>
 			<img src="">
 			<img src="">
@@ -45,25 +67,13 @@
 			<img src="">
 		</section>
 
-		<aside>
-			<ul>
-				<li>Hours:</li>
-				<li>M-F 7:30 AM - 6:00 PM</li>
-				<li>Sat. 5:00 PM - 6:00 PM</li>
-				<li>Sun. Pet Pickup Only</li>
-
-			<ul>
-				<li>Location</li>
-				<li>3928 Park Road</li>
-				<li>Charlotte, NC 28209</li>
-			</ul>
-		</aside>
-
-		<footer>
-			<p>Copyright &copy; 2012 All rights reserved <strong>St. Francis Hospital for Animals</strong> | Charlotte, NC USA | <a href="contact.html">Contact Us</a></p>
-			
-			<p>Proudly Serving Southpark, Dilworth, Myers Park and Cotswold since 1996</p>
-		</footer>
+		<div id="footer" class="span12">
+			<div class="container">
+				<p class="muted credit">Copyright &copy; 2012 All rights reserved <strong>St. Francis Hospital for Animals</strong> | Charlotte, NC USA | <a href="contact.html">Contact Us</a></p>
+				
+				<p class="muted credit">Proudly Serving Southpark, Dilworth, Myers Park and Cotswold since 1996</p>
+			</div>
+		</div> <!--close footer -->
 
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
     	<script src="js/bootstrap.min.js"></script>
