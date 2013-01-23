@@ -8,30 +8,25 @@
 	gray 		= #807D79
 */
 
-html {
+html{
 	background: #7a7265;
 }
 
-ul, h1, h2, h3, h4, h5, h6 {
-		margin: 0;
+.nobullets{
 		list-style: none;
+		margin: 0;
 }
 
-body {
+body{
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 auto;
 	padding: 0;
 }
 
-.container{
+.containerfluid{
 	/*background: url(../img/desktopcomp.jpg); */
 	background-color: #D1DBBD;
 
-}
-
-.masthead {
-	background: url(../img/header_backg.gif);
-	background-repeat: repeat;
 }
 
 nav{
@@ -42,11 +37,7 @@ nav ul{
 	display: inline;
 }
 
-.jumbotron {
-
-}
-
-aside {
+aside{
 	float: right;
 }
 
@@ -54,6 +45,20 @@ aside {
 	margin-left: 0px;
 }
 
+.navbar-inner{
+	background: url(../img/header_backg.gif) repeat-x;
+}
 
+.cta{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	margin-right: 170px;
+	margin-bottom: 70px;
+}
 
+.hero-unit{
+	position: relative;
+}
 
