@@ -14,45 +14,41 @@
 	<!-- End Bootstrap -->
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		<!-- Begin page content -->
+
 	<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-	<div class="container-fluid">
-		<a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		</a>
-		<a class="brand" href="index.html">St. Francis Hospital for Animals</a>
-		<div class="nav-collapse collapse">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand red" href="index.html">
+					<img src="img/logo.png"></img>
+				</a>
+				
+				<ul class="nav nav-pills">
+					<li class="active"><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="payment.html">Payments</a></li>
+					<li><a href="review.html">Reviews</a></li>
+					<li><a href="#">Links</a></li>
+				</ul>
+				
+				<form class="form-search nav navbar-search pull-right">
+				  <input type="text" class="input-medium search-query">
+				  <button type="submit" class="btn">Search</button>
+				</form>
+			</div> <!--close container-fluid -->
+		</div> <!--close navbar-inner -->
+	</div> <!--close navbar -->
 
-		<ul class="nav nav-pills">
-			<li class="active"><a href="about.html">About Us</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="payment.html">Payments</a></li>
-			<li><a href="review.html">Reviews</a></li>
-			<li><a href="#">Links</a></li>
-		</ul>
-		
-		<form class="form-search navbar-search pull-right">
-		  <input type="text" class="input-medium search-query">
-		  <button type="submit" class="btn">Search</button>
-		</form>
+	<div class="container-fluid top-margin">
 
-	</div>
-	</div>
-	</div>
-	</div>
-
-	<div class="container">
-
-		<div class="row-fluid">
+	<div class="row-fluid space">
 		<article class="span9">
-			<h1>About Us</h1> 
-				<p>St. Francis Hospital for Animals was founded in 1996 with the idea that bigger is NOT always better. While a large practice with many rotating doctors may have some advantages, sometimes clients and patients become just a number. We prefer a smaller, more personal practice atmosphere where we take the time to get to know you and your pet and their individual personalities and health needs. You will experience the continuity of having a doctor take care of your animal who already knows them. There is no need to guess who is on duty any given day.</p>
+			<h1>About Us</h1>
+				<img src="img/staff.jpg" class="img-polaroid first"><p class="float">St. Francis Hospital for Animals was founded in 1996 with the idea that bigger is NOT always better. While a large practice with many rotating doctors may have some advantages, sometimes clients and patients become just a number. We prefer a smaller, more personal practice atmosphere where we take the time to get to know you and your pet and their individual personalities and health needs. You will experience the continuity of having a doctor take care of your animal who already knows them. There is no need to guess who is on duty any given day.</p>
 				
 				<p>Our practice is full-service. We offer the latest diagnostics and treatments available, either on-site or via our association with a local group of specialists. Additionally, our doctor is a firm believer in continuing education to keep up with the most current concepts of preventive medicine. In fact, we use risk assessment to tailor each patient's wellness care to his or her lifestyle, giving your pet only what is necessary. Call us or stop by for a visit. We'll be happy to answer any questions your may have.</p>
 
@@ -78,18 +74,31 @@
 		</div>
 
 		<section class="span9">
-			<h1>Our Staff</h1>
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
-			<img src="">
+			<div id="tabs">
+				<h1>Our Staff</h1>
+				<ul>
+				<li><a href="#tabs-1">Dr. Cooper</a></li>
+				<li><a href="#tabs-2">Annette</a></li>
+				<li><a href="#tabs-3">Ashley</a></li>
+				</ul>
+
+				<div id="tabs-1">
+				<p><img src="img/cooper.png" class="img-polaroid">
+				Dr. William Cooper is the owner and founder of St. Francis Hospital for Animals. He grew up in Charlotte in the Freedom Park neighborhood and did his undergraduate studies at N.C. State University. He received his Doctor of Veterinary Medicine degree from Auburn University in 1984. After working for a brief period with a large animal practice in Florida, Dr. Copper interned at one fo the busiest practices in Chicado before returning to Charlotte.</p>
+				<p>Dr. Cooper has been an animal lover since childhood. When not working, Dr. Cooper enjoys playing Frisbee with his dogs or flying small planes. He and his wife Carol have six cats, two dogs, and two horses.</p>
+				</div>
+
+				<div id="tabs-2">
+				<p><img src="img/ashley.png" class="img-polaroid">Ashley Mauldin has been with St. Francis Hospital for Animals since the beginning and was invaluable in getting the practice off the ground. She is our head technician and does everything from reception to assisting in surgery. She and her husband, Don, have one son, two dogs, and a cat.</p>
+				</div>
+
+				<div id="tabs-3">
+				<p><img src="img/annette.png" class="img-polaroid">Annette Celender, LVT, is our office manager. She is a graduate of the median School of Allied Health Veterinary Technology program in Pittsburgh. She has been with St. Francis since 1999, and in ithe veterinary field for over 29 years. She has several cats and is shown above with, Phantom, one of her handicapped kittens. She has a special interest in feline medicine and hand-raising orphan kittens.</p>
+				<p>"All my cats have been 'un-adoptable,' requiring medical attention which I have been very fortunate to provide for them."</p>
+				</div>
+				</div> <!-- close tabs -->
 		</section>
-		</div>
-		</div>
+		</div> <!-- close container-fluid -->
 
 		<div class="row-fluid">
 		<div id="footer" class="span12">
@@ -103,18 +112,25 @@
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
     	<script src="js/bootstrap.min.js"></script>
     	<script src="js/bootstrap.js"></script>
-    	    	<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-37915847-1']);
-		  _gaq.push(['_trackPageview']);
+    	    <script type="text/javascript">
+				  var _gaq = _gaq || [];
+				  _gaq.push(['_setAccount', 'UA-37915847-1']);
+				  _gaq.push(['_trackPageview']);
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+				  (function() {
+				    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				  })();
+			</script>
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+		<script>
+			$(function() {
+			$( "#tabs" ).tabs();
+			});
 		</script>
-    </div>
+    </div> <!-- close row-fluid -->
 	</div>
 	</div>
 	</body>
