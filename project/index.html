@@ -15,6 +15,12 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet" media="screen">
+		<!--[if !IE 7]>
+			<style type="text/css">
+				#wrap {display:table;height:100%}
+			</style>
+		<![endif]-->
+
 	</head>
 
 	<body>
@@ -22,12 +28,12 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container-fluid">
+			<div class="container-fluid .nav-collapse.collapse">
 				<a class="brand red" href="index.html">
 					<img src="img/logo.png"></img>
 				</a>
 				
-				<ul class="nav nav-pills">
+				<ul class="nav nav-pills" data-toggle="collapse" 
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="payment.html">Payments</a></li>
@@ -49,7 +55,7 @@
 				<div class="carousel-inner">
 					
 					<div class="active sitem">
-						<img src="img/Dog.png" alt="dog in front of tree" class="img-polaroid">
+						<img src="img/Dog.png" alt="dog in front of tree">
 						</img>
 							<div class="carousel-caption">
 								<h4>In a hurry?</h4>
@@ -59,7 +65,7 @@
 					</div>
 
 					<div class="item">
-						<img src="img/Dog.png" alt="dog in front of tree" class="img-polaroid">
+						<img src="img/Dog.png" alt="dog in front of tree">
 						</img>
 							<div class="carousel-caption">
 								<h4>In a hurry?</h4>
@@ -69,7 +75,7 @@
 					</div>
 
 					<div class="item">
-						<img src="img/Dog.png" alt="dog in front of tree" class="img-polaroid">
+						<img src="img/Dog.png" alt="dog in front of tree">
 						</img>
 							<div class="carousel-caption">
 								<h4>In a hurry?</h4>
@@ -91,7 +97,7 @@
 		<div class="row-fluid">
 			<article class="span8 offset1">
 				<h1>Our hospital</h1> 
-					<img src="img/stfran_th.jpg" alt="St. Francis Hospital for Animals vet buidling front" width="200" class="img"><p class="space">Our practice is full-service. We offer the latest diagnostics and treatments available, either on-site or via our association with a local group of specialists. Additionally, our doctor is a firm believer in continuing education to keep up with the most current concepts of preventive medicine. In fact, we use risk assessment to tailor each patient's wellness care to his or her lifestyle, giving your pet only what is necessary. Call us or stop by for a visit. We'll be happy to answer any questions your may have.</p>
+					<img src="img/stfran_th.jpg" alt="St. Francis Hospital for Animals vet buidling front" width="200" class="img_main"><p class="space">Our practice is full-service. We offer the latest diagnostics and treatments available, either on-site or via our association with a local group of specialists. Additionally, our doctor is a firm believer in continuing education to keep up with the most current concepts of preventive medicine. In fact, we use risk assessment to tailor each patient's wellness care to his or her lifestyle, giving your pet only what is necessary. Call us or stop by for a visit. We'll be happy to answer any questions your may have.</p>
 
 					<p class="space">St. Francis Hospital for Animals: "Modern medicine with old fashioned care."</p>
 			</article>
@@ -106,9 +112,11 @@
 
 			<address>
 			 <strong>Location</strong><br>
+			<a href="http://mapq.st/WKTdXF" target="_blank">
 			3928 Park Road<br>
 			Charlotte, NC 28209<br>
-			<abbr title="Phone">P:</abbr> (704) 527-2030
+			</a>
+			<abbr title="Phone">P:</abbr> <a href="tel:+17045272030">(704)527-2030</a>
 			</address>
 		</aside>
 
