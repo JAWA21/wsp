@@ -21,11 +21,13 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container-fluid">
+			<div class="container">
+				<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="brand red" href="index.html">
-					<img src="img/logo.png"></img>
+					<img src="img/logo2.png"></img>
 				</a>
 				
+				<div class="nav-collapse collapse">
 				<ul class="nav nav-pills">
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="services.html">Services</a></li>
@@ -33,11 +35,8 @@
 					<li class="active"><a href="review.html">Reviews</a></li>
 					<li><a href="#">Links</a></li>
 				</ul>
+				</div> <!-- close nav-collapse -->
 				
-				<form class="form-search nav navbar-search pull-right">
-				  <input type="text" class="input-medium search-query">
-				  <button type="submit" class="btn">Search</button>
-				</form>
 			</div> <!--close container-fluid -->
 		</div> <!--close navbar-inner -->
 	</div> <!--close navbar -->
@@ -45,13 +44,27 @@
 	<div class="container-fluid top-margin">
 
 		<div class="row-fluid space">
-		<section class="span9">
+		<article class="span9">
 			<h1>Reviews</h1> 
 				<p>We appreciate our clients and would love for you to tell others about us. Take a moment and read what others say about us. Please leave a review about our practice.</p>
 				
 				<p>We are committed to practicing veterinary care with a personal approach.</p>
 
-		</section>
+			<form>
+				<div class="control-group">
+					<label class="control-label" for="message">Message:</label>
+					<div class="controls">
+					<textarea id="message" name="message" rows="6" cols="33" >
+					</textarea>
+					</div>
+				</div>
+
+				<div>
+					<input type="submit" value="Send" class="btn btn-success pull-left">
+				</div>
+			</form>
+
+		</article>
 
 		<aside class="span3">
 			<ul class="nobullets">
@@ -70,6 +83,36 @@
 			<abbr title="Phone">P:</abbr> <a href="tel:+17045272030">(704)527-2030</a>
 			</address>
 		</aside>
+
+		<article>
+			<div class="span6 top-margin">
+				<h2>Recent reviews</h2>
+				<ul>
+					<li class="reviews"><em>Andrew Oprysko</em> reviewed 4 months ago
+					<strong>Quality Excellent</strong>
+					We have only been going to St. Francis Hospital for Animals for about 10 months but in that time Dr. Cooper and his staff have always provided us with excellent service. From the initial check up for our newly adopted dog to our recent drama of a chewed advil bottle, both Dr. Cooper and his staff were always friendly and knowledgeable and you could really tell they cared about us and our pet. I found them after getting a recommendation from a co-worker and would not hesitate to recommend them to anyone who asked.</li>
+
+					<li class="reviews"><em>A Google User</em> reviewed 8 months ago
+					<strong>Overall Excellent</strong>
+					I love this vet. Highly recommended. I have been taking my dog to Dr. Cooper for almost two years now, and have brought in multiple stray animals as well. The service is always fantastic. The staff is helpful and they clearly love animals. To make it even better, I almost always leave paying less than I expect. They are very reasonable in their pricing, and on some occasions I have even left without being charged anything at all. Needless to say, as long as I'm in the area I'll be bringing my pets to Dr. Cooper.</li>
+				</ul>
+			</div>
+
+			<div class="span6 top-margin container list-right">
+				<ul>
+					<li class="reviews"><em>A Google User</em> reviewed 2 years ago
+					<strong>Overall Excellent</strong>
+					I have two dogs; one is 10 and the other is 8. My dogs don't do well in high traffic, busy, loud veterinary offices… they both do best in calm, serene, quiet environments. St. Francis Hospital for Animals is exactly what I've been looking for. Both of my dogs needed to have their teeth cleaned, involving blood work and anesthesia. One of them also needed 2 mystery bumps removed which required stitches and a follow up visit. I was a nervous mamma and called to ask if the doctor would check her in 5 days rather than wait the 10 days till our follow up appointment. When I called, they made me an appointment and didn't even charge me to unwrap her leg, verify that it was healing well and rewrap it. I really appreciated their kindness as this was my first experience with surgery for my babies and I needed some reassurance. I truly appreciate the doctors and the vet techs for being there to ease my nerves!</li>
+
+					<li class="reviews"><em>A Google User</em> reviewed 3 years ago
+					<strong>Overall Excellent</strong>
+					St. Francis is where it's at for people who genuinely care about your pet's health... Dr. Cooper is wonderful - thorough, kind, gentle, and pretty funny. His staff are polite and great with my dog who can be a bit of a challenge at the vet. He came highly recommended by three of my friends that bring their animals to him (including one 178 pound Great Dane!) and I would absolutely recommend him to everyone I know. Haze and I love Dr. Cooper and the entire staff at St. Francis, I'm very grateful to have gotten plugged in with a terrific vet here in Charlotte.
+					</li>
+				</ul>
+			</div>
+
+
+
 	</div> <!-- close row-fluid -->
 	</div> <!-- close container-fluid -->
 

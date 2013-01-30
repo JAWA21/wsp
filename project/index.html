@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>	
-		<meta charset="utf-8" />
+		<meta charset="utf-8"/>
 		<title>St. Francis Animal Hospital</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<meta content="" name="description">
 		<meta content="" name="author">
 	<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<!--	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
 		<link href="css/bootstrap-responsive.css" rel="stylesheet" >
-	<!--	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" >
 	<!-- End Bootstrap -->
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -28,11 +26,13 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container-fluid .nav-collapse.collapse">
+			<div class="container">
+				<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="brand red" href="index.html">
 					<img src="img/logo2.png"></img>
 				</a>
 				
+				<div class="nav-collapse collapse">
 				<ul class="nav nav-pills">
 					<li><a href="about.html">About Us</a></li>
 					<li><a href="services.html">Services</a></li>
@@ -40,21 +40,16 @@
 					<li><a href="review.html">Reviews</a></li>
 					<li><a href="#">Links</a></li>
 				</ul>
+				</div> <!-- close nav-collapse -->
 				
-				<form class="form-search nav navbar-search pull-right">
-				  <input type="text" class="input-medium search-query">
-				  <button type="submit" class="btn">Search</button>
-				</form>
 			</div> <!--close container-fluid -->
 		</div> <!--close navbar-inner -->
 	</div> <!--close navbar -->
 
+<div class="main-container">
 	<div class="hero-unit">
-		<div class="container-fluid">
-			<div id="myCarousel" class="carousel slide">
+		<div class="container img-polaroid">
 				<div class="carousel-inner">
-					
-					<div class="active sitem">
 						<img src="img/Dog.png" alt="dog in front of tree">
 						</img>
 							<div class="carousel-caption">
@@ -62,40 +57,13 @@
 								<p>Fill out our quick form</p>
 								<a class="btn btn-primary btn-large cta pull-right" href="form.html"> Request Appointment </a>
 							</div>
-					</div>
-
-					<div class="item">
-						<img src="img/Dog.png" alt="dog in front of tree">
-						</img>
-							<div class="carousel-caption">
-								<h4>In a hurry?</h4>
-								<p>Fill out our quick form</p>
-								<a class="btn btn-primary btn-large cta pull-right" href="form.html"> Request Appointment </a>
-							</div>
-					</div>
-
-					<div class="item">
-						<img src="img/Dog.png" alt="dog in front of tree">
-						</img>
-							<div class="carousel-caption">
-								<h4>In a hurry?</h4>
-								<p>Fill out our quick form</p>
-								<a class="btn btn-primary btn-large cta pull-right" href="form.html"> Request Appointment </a>
-							</div>
-					</div>
 				</div> <!-- close carousel-inner -->
-
-				<a class="left carousel-control" data-slide="prev" href="#myCarousel">‹</a>
-      			<a class="right carousel-control" data-slide="next" href="#myCarousel">›</a>
-
       		</div>
       	</div>
-      </div>
 	
-		<div class="container-fluid">
-
+		<div class="container">
 		<div class="row-fluid">
-			<article class="span8 offset1">
+			<article class="span8">
 				<h1>Our hospital</h1> 
 					<img src="img/stfran_th.jpg" alt="St. Francis Hospital for Animals vet buidling front" width="200" class="img_main"><p class="space">Our practice is full-service. We offer the latest diagnostics and treatments available, either on-site or via our association with a local group of specialists. Additionally, our doctor is a firm believer in continuing education to keep up with the most current concepts of preventive medicine. In fact, we use risk assessment to tailor each patient's wellness care to his or her lifestyle, giving your pet only what is necessary. Call us or stop by for a visit. We'll be happy to answer any questions your may have.</p>
 
@@ -122,6 +90,7 @@
 
 		</div>
 	</div> <!--close container-fluid -->
+</div> <!-- close main-container -->
 
     	<div class="row-fluid">
 		<div id="footer" class="span12">
@@ -129,9 +98,9 @@
 		</div> <!--close footer -->
 	</div> <!-- close row-fluid -->
 
+
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
     	<script src="js/bootstrap.min.js"></script>
-    	<script src="js/bootstrap.js"></script>
 
     	<script type="text/javascript">
 		  var _gaq = _gaq || [];

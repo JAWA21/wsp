@@ -23,11 +23,13 @@
 
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container-fluid">
+			<div class="container">
+				<button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="brand red" href="index.html">
-					<img src="img/logo.png"></img>
+					<img src="img/logo2.png"></img>
 				</a>
 				
+				<div class="nav-collapse collapse">
 				<ul class="nav nav-pills">
 					<li><a href="about.html">About Us</a></li>
 					<li class="active"><a href="services.html">Services</a></li>
@@ -35,11 +37,8 @@
 					<li><a href="review.html">Reviews</a></li>
 					<li><a href="#">Links</a></li>
 				</ul>
+				</div> <!-- close nav-collapse -->
 				
-				<form class="form-search nav navbar-search pull-right">
-				  <input type="text" class="input-medium search-query">
-				  <button type="submit" class="btn">Search</button>
-				</form>
 			</div> <!--close container-fluid -->
 		</div> <!--close navbar-inner -->
 	</div> <!--close navbar -->
@@ -47,7 +46,7 @@
 	<div class="container-fluid top-margin">
 
 		<div class="row-fluid space">
-		<section class="span9">
+		<article class="span9">
 			<h1>Services we provide</h1> 
 				<p>We know your pet is a member of your family, and we are dedicated to the long-lasting health of your animal. We provide the following services:</p>
 				<ul>
@@ -73,7 +72,7 @@
 
 				<p>We understand the delight, joy, and affection that bonds you with your pet, and we work to enhance and extend that
 				relationship for as long as possible.</p>
-		</section>
+		</article>
 
 		<aside class="span3">
 			<ul class="nobullets">

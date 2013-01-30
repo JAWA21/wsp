@@ -27,9 +27,7 @@ nav {
 }
 
 .navbar-inner {
-	background: url(../img/bright_squares.png);
 	border: none;
-	background-image: none;
 }
 
 nav ul {
@@ -41,9 +39,41 @@ color: #ffffff;
 background-color: #3E606F;
 }
 
+.navbar .btn-navbar {
+	padding-right: 25px;
+}
+
+.container-fluid {
+	min-height: 740px;
+}
+
+.main-container {
+	background: url(../img/bright_squares.png);
+	background-repeat: repeat;
+	max-width: 1062px;
+	margin: 0 auto;
+	min-height: 740px;
+}
+
+article {
+	margin-top: 30px;
+}
+
+h1 {
+	background: url(../img/bright_squares.png);
+	color: #193441;
+	padding: 10px;
+}
+
+p {
+	padding: 5px;
+}
+
 aside {
 	float: right;
-	margin-top: 25px;
+	margin-top: 40px;
+	background: url(../img/bright_squares.png);
+	padding: 10px;
 }
 
 .top-margin {
@@ -72,13 +102,15 @@ aside {
 
 .img-polaroid {
 	margin: 0 auto;
+	max-width: 900px;
 }
 
 .carousel-caption {
 	border-radius: 5px;
+	max-width: 900px;
 }
 
-.img_main{
+.img_main {
 	float: left;
 	padding-right: 10px;
 }
@@ -101,7 +133,7 @@ aside {
 	border: none;
 }
 
-#tabs img{
+#tabs img {
 	float: left;
 	margin-right: 10px;
 }
@@ -123,5 +155,10 @@ a:hover {
 	color: #3E606F;
 }
 
+.list-right {
+	margin-top: 55px;
+}
 
-
+.reviews{
+	margin: 15px;
+}
