@@ -16,10 +16,15 @@ body {
 	padding: 0;
 	background-color: #D1DBBD;
     padding-top: 140px; /* padding for the top nav bar */
+    
 }
 
 nav {
 	float: right;
+}
+
+.navbar-inner {
+	background: url(../img/bright_squares.png);
 }
 
 nav ul {
