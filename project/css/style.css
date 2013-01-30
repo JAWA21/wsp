@@ -16,15 +16,20 @@ body {
 	padding: 0;
 	background-color: #D1DBBD;
     padding-top: 140px; /* padding for the top nav bar */
-    
 }
 
 nav {
 	float: right;
 }
 
+.navbar-inverse .nav .active > a {
+	color: #111;
+}
+
 .navbar-inner {
 	background: url(../img/bright_squares.png);
+	border: none;
+	background-image: none;
 }
 
 nav ul {
@@ -66,7 +71,6 @@ aside {
 }
 
 .img-polaroid {
-
 	margin: 0 auto;
 }
 
